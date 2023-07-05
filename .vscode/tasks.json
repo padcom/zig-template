@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build",
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"command": "~/.zvm/bin/zig build"
+		},
+		{
+			"label": "clean",
+			"type": "shell",
+			"command": "rm -rf zig-cache zig-out",
+			"problemMatcher": []
+		}
+	]
+}
